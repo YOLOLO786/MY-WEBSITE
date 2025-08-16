@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About • My Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container row between center">
+      <a class="brand" href="index.html">My<span>Site</span></a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav" id="menuBtn">☰</button>
+      <nav id="nav" class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <h1>About</h1>
+      <p>Write a short bio: who you are, what you do, how you help. Keep it human.</p>
+      <div class="grid-2">
+        <div>
+          <h2>Skills</h2>
+          <ul class="checklist">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Responsive design</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Tools</h2>
+          <ul class="checklist">
+            <li>VS Code</li>
+            <li>Git Bash</li>
+            <li>GitHub Pages</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container row between center">
+      <small>© <span id="year"></span> My Website</small>
+      <a class="back-to-top" href="#top" id="backToTop">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

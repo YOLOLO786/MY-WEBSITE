@@ -10,4 +10,112 @@
   <h1>Welcome to My Website</h1>
   <p>This is my first website hosted on GitHub Pages!</p>
 </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home • My Website</title>
+
+  <!-- SEO basics -->
+  <meta name="description" content="Clean, fast, responsive website built with HTML/CSS/JS and hosted on GitHub Pages." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="My Website" />
+  <meta property="og:description" content="A simple, responsive site on GitHub Pages." />
+  <meta property="og:image" content="assets/images/social-preview.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts (optional, safe) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container row between center">
+      <a class="brand" href="index.html">My<span>Site</span></a>
+
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav" id="menuBtn" title="Open menu">☰</button>
+
+      <nav id="nav" class="nav" aria-label="Primary">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#features">Features</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Build fast. Launch free. Look pro.</h1>
+        <p>A minimal, responsive starter you can customize and sell as a template or use for clients.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#features">See features</a>
+          <a class="btn" href="contact.html">Work with me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Responsive</h3>
+            <p>Mobile-first layout that looks great on phones, tablets, and desktops.</p>
+          </article>
+          <article class="card">
+            <h3>Fast</h3>
+            <p>Lightweight HTML/CSS/JS with no heavy frameworks.</p>
+          </article>
+          <article class="card">
+            <h3>Easy to edit</h3>
+            <p>Well-structured files and reusable styles so you can customize quickly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery (replace images later) -->
+    <section class="section alt">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="grid-3 images">
+          <img src="https://picsum.photos/seed/a/640/420" alt="Sample work 1">
+          <img src="https://picsum.photos/seed/b/640/420" alt="Sample work 2">
+          <img src="https://picsum.photos/seed/c/640/420" alt="Sample work 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="section">
+      <div class="container">
+        <blockquote class="quote">
+          “Clean, fast, and so easy to customize. Perfect for quick launches.”
+          <cite>— Happy Client</cite>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container row between center">
+      <small>© <span id="year"></span> My Website</small>
+      <a class="back-to-top" href="#top" id="backToTop">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
